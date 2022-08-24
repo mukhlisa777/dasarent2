@@ -1,0 +1,159 @@
+//footer
+
+
+.footer{
+  display: flex;
+  @include media(1200){
+    flex-wrap: wrap;
+  }
+  
+  &__box1{
+    width: 50%;
+   height: auto;
+   background: $gold;
+   padding-top: 5%;
+   @include media(1400){
+   width: auto;
+   height: auto;
+ 
+
+  }
+  @include media(500){
+    width: auto;
+    height: auto;
+ 
+   }
+  
+  }
+  &__title{
+     margin-top: 40px;
+     font-family: $rob;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 30px;
+     line-height: 36px;
+     text-align: center;
+     letter-spacing: 0.05em;
+     color: #323232;
+     margin-bottom: 10px;
+     @include media(1200){
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+     }
+     
+  }
+  &__text{
+    margin-left: 15%;
+    width: auto;
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #323232;
+    margin-bottom: 27px;
+    @include media(500){
+      width: auto;
+      font-size: 17px;
+    
+      line-height: 17px;
+   
+     }
+     @include media(500){
+      width: 100%;
+      margin-left: 0;
+      padding-right: 5px;
+      padding-left: 5px;
+   
+     }
+     @include media(450px){
+    
+      font-size: 15px;
+   
+     }
+     @include media(600){
+     margin-left: 5px;
+   
+     }
+  }
+  &__icons{
+    margin-left: 20%;
+  }
+
+  &__tel, &__email{
+  margin-right: 5%;
+    margin-right: 20px;
+font-family: $rob;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.05em;
+color: #323232;
+@include media(400){
+ font-size: 15px;
+
+ }
+& i{
+  margin-right: 10px;
+}
+  }
+  &__boxes{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__social__box{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+   background: $blue;
+   border-radius: 10px;
+   @include media(500){
+  margin-right: 5px;
+    
+   }
+  }
+  &__map{
+    width: 50%;
+    height: 100%;
+    @include media(1200){
+    width: 100%;
+   }
+  }
+  
+
+}
+.text{
+text-align: center;
+margin-top: 30px;
+font-family: $tag;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+
+line-height: 22px;
+letter-spacing: 0.05em;
+color: #000000;
+@include media(500){
+  width: auto;
+  font-size: 15px;
+  margin-top: 20px;
+
+ }
+ @include media(400){
+  width: auto;
+  font-size: 13px;
+
+ }
+}
+

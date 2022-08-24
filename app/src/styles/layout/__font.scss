@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "KronaOne";
+  src: url(../fonts/KronaOne-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montaga-Regular";
+  src: url(../fonts/Montaga-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Bold.woff2);
+  font-weight: 700;
+}
+.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; }
+  .fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400; }
+    @font-face {
+      font-family: 'Font Awesome 5 Brands';
+      src: url(../fonts/fa-brands-400.woff2);
+      font-weight: 400;
+    }
+    .fad {
+      position: relative;
+      font-family: 'Font Awesome 5 Duotone';
+      font-weight: 900; }
+      @font-face {
+        font-family: 'Font Awesome 5 Duotone';
+        src: url(../fonts/fa-duotone-900.woff2);
+        font-weight: 900;
+      }
+    .fad:before {
+      position: absolute;
+      opacity: 1;
+    }
+    .fad:after {
+      opacity: 0.4;
+    }
+      .fal {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300; }
+      @font-face {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+        src: url(../fonts/fa-light-300.woff2);
+      }
+      .far {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 400; }
+      @font-face {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 400;
+        src: url(../fonts/fa-regular-400.woff2);
+      }
+      .fa,
+      .fas {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 900; } 
+        @font-face {
+          font-family: 'Font Awesome 5 Pro';
+          src: url(../fonts/fa-solid-900.woff2);
+          font-weight: 900;
+        }

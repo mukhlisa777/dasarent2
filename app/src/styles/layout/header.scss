@@ -1,0 +1,238 @@
+.header{
+  background: $gold;
+  height: 100vh;
+  position: relative;
+
+  &__contact{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: $blue;
+    padding:35px 15px;
+    // clip-path: polygon(40% 0, 110% 15%, 110% 85%, 40% 100%, 0 100%, 0 0);
+    // background-clip: ;
+    z-index: 10;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    
+    @include media(1200){
+     left: -45px;
+     
+   
+      }
+      &:hover{
+      left: 0;
+      }
+      
+      
+    &-link{
+      margin-bottom: 25px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__nav{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+  &__nav-media{
+    display: flex;
+    
+    @include media(992){
+      display: none;
+    }
+
+    &.active{
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 250px;
+      background: $blue;
+      display: flex;
+      flex-direction: column;
+      padding-top: 100px;
+      z-index: 99;
+ 
+    }
+  }
+  &__nav-btn{
+    border: none;
+    background-color: transparent;
+    display: none;
+
+    @include media(992){
+      display: block;
+      margin-left: auto;
+      margin-right: 5%;
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      z-index: 100;
+      color: #fff;
+    }
+    & i{
+      font-size: 30px;
+      color: $blue;
+      &::after{
+        content: "\f0c9";
+      }
+      @include media(992){
+        color: #fff;
+      }
+    }
+
+    &.active{
+      & i{
+        font-size: 30px;
+        color: $blue;
+        &::after{
+          content: "\f00d";
+        }
+        @include media(992){
+          color: #fff;
+        }
+      }
+
+    }
+  }
+  &__logo{
+    width: 80px;
+    height: 80px;
+    &-img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media(992){
+      flex-direction: column;
+    }
+  }
+  &__item{
+    margin-left: 25px;
+    @include media(992){
+      margin: 10px 0;
+    }
+  }
+  &__link{
+    font-family: $sans;
+    font-weight: 700;
+    font-size: 16px;
+    color: $blue;
+    @include media(992){
+      color: #fff;
+    }
+  }
+  &__tel{
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 16px;
+    color: $blue;
+    margin-left: 50px;
+    & i{
+      margin-right: 10px;
+      &::after{
+        content: "\f879";
+      }
+    }
+    @include media(992){
+      color: #fff;
+    }
+  }
+}
+
+.header{
+  &-content{
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  @include media(1200){
+  position: relative;
+  z-index: 2;
+  }
+  }
+  &__title{
+    font-family: $os;
+    font-weight: 700;
+    font-size: 60px;
+    color: #323232;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+    
+    @include media(992){
+      font-size: 50px;
+      margin-bottom: 15px;
+      }
+      @include media(768){
+        font-size: 35px;
+        margin-bottom: 10px;
+        }
+  }
+  &__text{
+    font-family: $mon;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #323232;
+    width: 50%;
+    margin-bottom: 35px;
+    &>span{
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    @include media(992){
+      font-size: 50px;
+      margin-bottom: 20px;
+      width: 80%;
+      }
+      @include media(768){
+        font-size: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+        }
+  }
+  &__btn{
+    height: 60px;
+    width: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    color: #fff;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+  }
+  &__img{
+    // background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 70vh;
+    & img{
+      width: 100%;
+      height: 100%;
+    }
+    @include media(1200){
+
+      z-index: -1;
+      }
+    @include media(992){
+      display: none;
+    }
+  }
+}

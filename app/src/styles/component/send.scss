@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.send{
+
+  margin-top: 12%;
+  margin-left: 30%;
+position: relative;
+&__box{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121C76;
+  width: 600px;
+  height: 350px;
+ 
+}
+&__img{
+  margin-left: 40px;
+  margin-top: -60px;
+  width: 199px;
+  height: 199px;
+}
+&__cricle{
+  bottom: 40px;
+  left: -25%;
+  position: relative;
+  background: $gold;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  & img{
+    position: absolute;
+   top: -20%;
+   left: 10%;
+ 
+  }
+
+}
+
+}
+.send__text{
+  position: absolute;
+  font-family: $rob;
+  bottom: 15%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #fff;
+
+}

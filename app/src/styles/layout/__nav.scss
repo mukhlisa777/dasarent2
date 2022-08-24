@@ -1,0 +1,95 @@
+.nav{
+  background: $gold;
+  padding: 10px 0;
+  & .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media(1150){
+      display: none;
+      width: 250px;
+      background: $gold;
+      padding: 15px 0;
+    }
+    &.active{
+      display: flex;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      flex-direction: column;
+    }
+  }
+  &__btn{
+    background-color: transparent;
+    border: none;
+    display: none;
+    margin-right: 3%;
+    @include media(1150){
+      display: block;
+    }
+    &.active{
+      & i{
+        color: $blue;
+        font-size: 40px;
+        &::after{
+          content: "\f00d";
+        }
+      }
+    }
+
+    & i{
+      color: $blue;
+      font-size: 40px;
+      &::after{
+        content: "\f0c9";
+      }
+    }
+  }
+}
+.navbar__nav{
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+  @include media(1150){
+    flex-direction: column;
+    margin-right: 0;
+  }
+}
+.nav__link{
+  margin: 0 15px;
+  font-family: $sans;
+  font-weight: 700;
+  font-size: 16px;
+  color: $blue;
+  @include media(1150){
+    margin: 10px 0;
+  }
+
+  &.active{
+    color: #fff;
+  }
+}
+.nav__tel{
+  display: flex;
+  align-items: center;
+  font-family: $lato;
+  font-weight: 700;
+  font-size: 16px;
+  color: $blue;
+  & i{
+    margin-right: 10px;
+    &::after{
+      content: "\f879";
+    }
+    @include media(1150){
+      display: none;
+    }
+  }
+}

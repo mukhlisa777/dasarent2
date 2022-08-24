@@ -1,0 +1,68 @@
+.tex{
+  background-color: $blue;
+  padding: 40px 0;
+  text-align: center;
+  &__title{
+    text-align: center;
+    color: #fff;
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 30px;
+    // margin-bottom: 30px;
+  }
+  & .container{
+
+  }
+  &-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+ @include media(1200){
+  justify-content: space-evenly;
+ }
+  }
+  &__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 255px;
+    height: 312px;
+    position: relative;
+    margin-top: 30px;
+  }
+  &__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 252px;
+  }
+  &__btn{
+    width: 100%;
+    background: $gold;
+    padding: 17px 0 20px;
+    border: none;
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 20px;
+    color: #323232;
+  }
+  &__btn:hover{
+    background: #ABB4FF;
+    color: #fff;
+  }
+  &__more{
+    padding: 16px 30px;
+    background: $gold;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-family: $os;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+  }
+}

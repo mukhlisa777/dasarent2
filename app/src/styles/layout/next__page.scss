@@ -1,0 +1,139 @@
+
+// main
+
+
+.section-content{
+  background: rgba(13, 22, 97, 0.6);
+  height: 656px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include media(500){
+   width: 100%;
+ 
+   }
+ & .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ }
+ & img{
+  position: absolute;
+  top: 0;
+  height: auto;
+  width:100%;
+  z-index: -1;
+  @include media(1200){
+  width: 100%;
+  height: 100%;
+ 
+   }
+ }
+ 
+}
+.section__box1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+   & h2{
+    position: absolute;
+    top: 20%;
+    font-family: $sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    @include media(500){
+      width: auto;
+      font-size: 25px;
+   
+     }
+     @include media(450){
+     font-size: 19px;
+   
+     }
+   }
+   & p{
+    position: absolute;
+    top: 30%;
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+    width: 730px;
+    height: 90px;
+    @include media(1200){
+      width: auto;
+      padding-right: 10px;
+      padding-left: 10px;
+   
+     }
+     @include media(700){
+      width: auto;
+      font-size: 17px;
+      line-height: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+   
+     }
+
+   }
+ }
+ .next-list-info{
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  & input{
+    padding: 10px;
+   margin-bottom: 20px;
+   width: 350px;
+   height: 50px;
+   background: #FFFFFF;
+   border: none;
+   outline: none;
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   color: #949494;
+   @include media(500){
+    width: auto;
+    
+   
+ 
+   }
+  }
+  & button{
+   background: #0D1661;
+   border-radius: 5px;
+   padding: 13px 117px;
+   border: none;
+   outline: none;
+   font-family: $sans;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   color: #FFFFFF;
+   @include media(500){
+    padding: 13px 70px;
+ 
+   }
+  }
+  & button:hover{
+    background: $gold;
+    color: $blue;
+  }
+ }

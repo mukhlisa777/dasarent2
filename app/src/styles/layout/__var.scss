@@ -1,0 +1,15 @@
+$gold:#FFC736;
+$blue:#0D1661;
+$rob:"Roboto";
+$lato:'Lato';
+$mon:"Montserrat";
+$kron:"KronaOne";
+$tag:"Montaga-Regular";
+$sans:"OpenSans";
+$os:'Oswald';
+
+@mixin media($size) {
+  @media (max-width:#{$size}px) {
+    @content
+  }
+}
